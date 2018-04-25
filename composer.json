@@ -1,6 +1,8 @@
 {
+    "name": "kode-cms/kode-cms",
     "type": "project",
     "license": "proprietary",
+    "description": "Symfony 4 CMS for developers from developers",
     "require": {
         "php": "^7.1.3",
         "ext-iconv": "*",
@@ -53,7 +55,7 @@
     "extra": {
         "symfony": {
             "id": "01CBYSGSGVMHC8RG4DDEV96KK5",
-            "allow-contrib": false
+            "allow-contrib": true
         }
     }
 }
