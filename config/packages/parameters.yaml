@@ -1,0 +1,11 @@
+parameters:
+    redis_key: "kode_cms"
+    locale: "en"
+    translatable_locale: "en_US"
+    locales_long:
+        - "en_US"
+        - "lv_LV"
+    locales_short:
+        - "en"
+        - "lv"
+    languages: "(en|lv)"

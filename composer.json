@@ -1,15 +1,43 @@
 {
     "name": "kode-cms/kode-cms",
+    "version": "0.0.1-dev",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
     "description": "Symfony 4 CMS for developers from developers",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "homepage": "https://github.com/kode-cms/kode-cms",
+    "support": {
+        "issues": "https://github.com/kode-cms/kode-cms/issues"
+    },
+    "authors": [
+        {
+            "name": "KodeCMS",
+            "homepage": "https://github.com/kode-cms/kode-cms/contributors",
+            "role": "Community"
+        },
+        {
+            "name": "k0d3r1s",
+            "homepage": "https://github.com/k0d3r1s",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^7.1.3",
         "ext-iconv": "*",
+        "nelmio/api-doc-bundle": "^3.2",
+        "predis/predis": "^1.1",
+        "snc/redis-bundle": "dev-master",
+        "symfony/apache-pack": "^1.0",
+        "symfony/asset": "^4.0",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
         "symfony/lts": "^4@dev",
+        "symfony/profiler-pack": "^1.0",
+        "symfony/security-bundle": "^4.0",
+        "symfony/swiftmailer-bundle": "^3.2",
+        "symfony/webpack-encore-pack": "^1.0",
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
