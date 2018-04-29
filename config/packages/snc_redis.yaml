@@ -1,0 +1,47 @@
+snc_redis:
+    clients:
+        default:
+            type: predis
+            alias: session
+            dsn: "%env(REDIS_URL)%"
+            options:
+                replication: true
+                prefix: "%redis_key%_session_%kernel.environment%_"
+            logging: "%kernel.debug%"
+        cache:
+            type: predis
+            alias: cache
+            dsn: "%env(REDIS_URL1)%"
+            options:
+                replication: true
+                prefix: "%redis_key%_cache_%kernel.environment%_"
+            logging: "%kernel.debug%"
+        meta:
+            type: predis
+            alias: meta
+            dsn: "%env(REDIS_URL3)%"
+            options:
+                connection_timeout: 10
+                read_write_timeout: 30
+                replication: true
+                connection_persistent: false
+                cluster: Snc\RedisBundle\Client\Predis\Connection\PredisCluster
+                prefix: "%redis_key%_meta_%kernel.environment%_"
+            logging: "%kernel.debug%"
+    session:
+        client: session
+        prefix: "%redis_key%_session_%kernel.environment%_"
+    doctrine:
+        metadata_cache:
+            client: meta
+            entity_manager: default
+            document_manager: default
+        result_cache:
+            client: cache
+            entity_manager: default
+        query_cache:
+            client: cache
+            entity_manager: default
+        second_level_cache:
+            client: cache
+            entity_manager: default
