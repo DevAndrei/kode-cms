@@ -1,32 +1,29 @@
 framework:
     secret: '%env(APP_SECRET)%'
-    #default_locale: en
-    #csrf_protection: true
-    #http_method_override: true
-
-    # Enables session support. Note that the session will ONLY be started if you read or write from it.
-    # Remove or comment this section to explicitly disable session support.
+    default_locale: "%locale%"
+    csrf_protection: true
+    http_method_override: true
     session:
-        handler_id: ~
+        handler_id: snc_redis.session.handler
+        cookie_lifetime: 86400
 
-    #esi: true
-    #fragments: true
     php_errors:
         log: true
 
     assets: ~
 
     cache:
-        # Put the unique name of your app here: the prefix seed
-        # is used to compute stable namespaces for cache keys.
-        #prefix_seed: your_vendor_name/app_name
+        app: cache.adapter.redis
+        default_redis_provider: "redis://%env(REDIS_HOST)%/4"
 
-        # The app cache caches to the filesystem by default.
-        # Other options include:
+    templating:
+        engines:
+            - 'twig'
 
-        # Redis
-        #app: cache.adapter.redis
-        #default_redis_provider: redis://localhost
+    translator:
+        fallbacks:
+            - '%locale%'
+        enabled: true
 
-        # APCu (not recommended with heavy random-write workloads as memory fragmentation can cause perf issues)
-        #app: cache.adapter.apcu
+    validation:
+        enable_annotations: true

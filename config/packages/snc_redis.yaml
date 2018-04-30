@@ -3,7 +3,7 @@ snc_redis:
         default:
             type: predis
             alias: session
-            dsn: "%env(REDIS_URL)%"
+            dsn: "redis://%env(REDIS_HOST)%"
             options:
                 replication: true
                 prefix: "%redis_key%_session_%kernel.environment%_"
@@ -11,7 +11,7 @@ snc_redis:
         cache:
             type: predis
             alias: cache
-            dsn: "%env(REDIS_URL1)%"
+            dsn: "redis://%env(REDIS_HOST)%/1"
             options:
                 replication: true
                 prefix: "%redis_key%_cache_%kernel.environment%_"
@@ -19,7 +19,7 @@ snc_redis:
         meta:
             type: predis
             alias: meta
-            dsn: "%env(REDIS_URL3)%"
+            dsn: "redis://%env(REDIS_HOST)%/3"
             options:
                 connection_timeout: 10
                 read_write_timeout: 30
