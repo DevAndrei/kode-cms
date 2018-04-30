@@ -9,6 +9,7 @@ Requirements
 -----
 * PHP ^7.1
 * Redis
+* MySQL / MariaDB / SQLite
 * [Symfony application requirements][1]
 
 Installation
