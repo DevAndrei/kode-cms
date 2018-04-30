@@ -25,6 +25,9 @@
     "require": {
         "php": "^7.1",
         "ext-iconv": "*",
+        "easycorp/easy-log-handler": "^1.0",
+        "friendsofsymfony/user-bundle": "^2.1",
+        "jms/i18n-routing-bundle": "^3.0",
         "nelmio/api-doc-bundle": "^3.2",
         "predis/predis": "^1.1",
         "snc/redis-bundle": "dev-master",
@@ -37,19 +40,24 @@
         "symfony/form": "^4.0",
         "symfony/framework-bundle": "^4.0",
         "symfony/lts": "^4@dev",
+        "symfony/monolog-bundle": "^3.2",
+        "symfony/orm-pack": "^1.0",
         "symfony/profiler-pack": "^1.0",
         "symfony/psr-http-message-bridge": "^1.0",
         "symfony/security-bundle": "^4.0",
         "symfony/swiftmailer-bundle": "^3.2",
         "symfony/templating": "^4.0",
         "symfony/translation": "^4.0",
+        "symfony/twig-bundle": "^4.0",
         "symfony/validator": "^4.0",
         "symfony/webpack-encore-pack": "^1.0",
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
         "symfony/dotenv": "^4.0",
-        "symfony/var-dumper": "^4.0"
+        "symfony/maker-bundle": "^1.4",
+        "symfony/var-dumper": "^4.0",
+        "symfony/web-server-bundle": "^4.0"
     },
     "config": {
         "preferred-install": {
