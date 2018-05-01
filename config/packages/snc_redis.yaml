@@ -7,7 +7,7 @@ snc_redis:
             options:
                 replication: true
                 prefix: "%redis_key%_session_%kernel.environment%_"
-            logging: "%kernel.debug%"
+            logging: true
         cache:
             type: predis
             alias: cache

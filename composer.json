@@ -31,6 +31,7 @@
         "nelmio/api-doc-bundle": "^3.2",
         "predis/predis": "^1.1",
         "snc/redis-bundle": "dev-master",
+        "sonata-project/admin-bundle": "^3.35",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "^4.0",
         "symfony/cache": "^4.0",
