@@ -3,7 +3,9 @@ KodeCMS
 ### Symfony4 CMS from developers for developers
 
 KodeCMS is Symfony 4 based CMS/CMF designed to be easily 
-maintainable by a developer and understandable by user
+maintainable by a developer and understandable by user.  
+It's designed to be used as normal CMS, but it can be used as HeadlessCMS
+as well.
 
 Requirements
 -----
