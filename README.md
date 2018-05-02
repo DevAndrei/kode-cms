@@ -9,7 +9,7 @@ as well.
 
 Requirements
 -----
-* PHP ^7.1
+* PHP 7.2
 * Redis
 * MySQL / MariaDB / SQLite
 * [Symfony application requirements][1]
@@ -33,8 +33,7 @@ $ php bin/console server:run
 
 Alternatively, you can [configure a fully-featured web server][2] like Nginx
 or Apache to run the application.  
-`* No need to additionally require symfony/apache-pack as it
-is already a dependency of this application.`
+`* No need to require symfony/apache-pack as it is already implemented into this application.`
 
 [1]: https://symfony.com/doc/current/reference/requirements.html
 [2]: https://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html

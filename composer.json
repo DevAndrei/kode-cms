@@ -23,7 +23,7 @@
         }
     ],
     "require": {
-        "php": "^7.1",
+        "php": "^7.2",
         "ext-iconv": "*",
         "easycorp/easy-log-handler": "^1.0",
         "friendsofsymfony/user-bundle": "^2.1",
@@ -32,10 +32,11 @@
         "predis/predis": "^1.1",
         "snc/redis-bundle": "dev-master",
         "sonata-project/admin-bundle": "^3.35",
-        "symfony/apache-pack": "^1.0",
         "symfony/asset": "^4.0",
+        "symfony/browser-kit": "^4.0",
         "symfony/cache": "^4.0",
         "symfony/console": "^4.0",
+        "symfony/css-selector": "^4.0",
         "symfony/finder": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/form": "^4.0",
@@ -59,6 +60,7 @@
     "require-dev": {
         "symfony/dotenv": "^4.0",
         "symfony/maker-bundle": "^1.4",
+        "symfony/phpunit-bridge": "^4.0",
         "symfony/var-dumper": "^4.0",
         "symfony/web-server-bundle": "^4.0"
     },

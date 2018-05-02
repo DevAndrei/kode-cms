@@ -3,3 +3,8 @@ twig:
         - '%kernel.project_dir%/templates'
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    cache: "%kernel.cache_dir%/twig"
+    auto_reload: true
+    optimizations: -1
+    globals:
+        version: "%env(resolve:VERSION)%"
