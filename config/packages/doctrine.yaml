@@ -14,13 +14,6 @@ doctrine:
         auto_generate_proxy_classes: true
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
-        mappings:
-            KodeCms:
-                is_bundle: false
-                type: annotation
-                dir: '%kernel.project_dir%/src/Entity'
-                prefix: 'KodeCms\Entity'
-                alias: App
         metadata_cache_driver:
             type: service
             id: redis.result_cache.provider
@@ -33,5 +26,5 @@ doctrine:
         second_level_cache: true
 
 doctrine_migrations:
-    dir_name: '%kernel.project_dir%/src/Migrations'
+    dir_name: '%kernel.project_dir%/assets/migrations'
     namespace: DoctrineMigrations

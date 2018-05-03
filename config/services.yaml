@@ -4,16 +4,6 @@ services:
         autoconfigure: true
         public: true
 
-    KodeCms\:
-        resource: '../src/*'
-        exclude: '../src/{Entity,Migrations,Tests,Kernel.php}'
-
-    KodeCms\Controller\:
-        resource: '../src/Controller'
-        tags:
-            -
-                name: 'controller.service_arguments'
-
     EasyCorp\EasyLog\EasyLogHandler:
         public: false
         arguments:
