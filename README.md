@@ -1,3 +1,6 @@
+[1]: https://symfony.com/doc/current/reference/requirements.html
+[2]: https://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
+
 KodeCMS
 ========================
 ### Symfony4 CMS from developers for developers
@@ -34,6 +37,3 @@ $ php bin/console server:run
 Alternatively, you can [configure a fully-featured web server][2] like Nginx
 or Apache to run the application.  
 `* No need to require symfony/apache-pack as it is already implemented into this application.`
-
-[1]: https://symfony.com/doc/current/reference/requirements.html
-[2]: https://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html

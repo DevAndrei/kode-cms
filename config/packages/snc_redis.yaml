@@ -15,7 +15,7 @@ snc_redis:
             options:
                 replication: true
                 prefix: "%redis_key%_cache_%kernel.environment%_"
-            logging: "%kernel.debug%"
+            logging: false
         meta:
             type: predis
             alias: meta
@@ -27,7 +27,7 @@ snc_redis:
                 connection_persistent: false
                 cluster: Snc\RedisBundle\Client\Predis\Connection\PredisCluster
                 prefix: "%redis_key%_meta_%kernel.environment%_"
-            logging: "%kernel.debug%"
+            logging: false
     session:
         client: session
         prefix: "%redis_key%_session_%kernel.environment%_"
@@ -45,3 +45,6 @@ snc_redis:
         second_level_cache:
             client: cache
             entity_manager: default
+    profiler_storage:
+        client: cache
+        ttl: 3600

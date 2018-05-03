@@ -1,6 +1,5 @@
 framework:
     secret: '%env(APP_SECRET)%'
-    default_locale: "%locale%"
     csrf_protection: true
     http_method_override: true
     session:
@@ -20,10 +19,16 @@ framework:
         engines:
             - 'twig'
 
+    validation:
+        enable_annotations: true
+
+    default_locale: '%locale%'
     translator:
+        paths:
+            - '%kernel.project_dir%/translations'
         fallbacks:
             - '%locale%'
         enabled: true
 
-    validation:
-        enable_annotations: true
+    router:
+        strict_requirements: true
