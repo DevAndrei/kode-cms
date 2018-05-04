@@ -45,6 +45,3 @@ snc_redis:
         second_level_cache:
             client: cache
             entity_manager: default
-    profiler_storage:
-        client: cache
-        ttl: 3600
