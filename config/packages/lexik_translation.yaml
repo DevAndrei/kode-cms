@@ -1,0 +1,21 @@
+lexik_translation:
+    fallback_locale: '%locale%'
+    managed_locales: '%locales_short%'
+    resources_registration:
+        managed_locales_only: true
+    grid_input_type: textarea
+    grid_toggle_similar: false
+    storage:
+        type: orm
+    dev_tools:
+        enable: '%kernel.debug%'
+        create_missing: true
+        file_format: yml
+
+services:
+    lexik_translation.token_finder:
+        class: Lexik\Bundle\TranslationBundle\Util\Profiler\TokenFinder
+        public: true
+        arguments:
+            $profiler: '@profiler'
+            $defaultLimit: 15

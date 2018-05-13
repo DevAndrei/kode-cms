@@ -3,34 +3,34 @@ snc_redis:
         default:
             type: predis
             alias: session
-            dsn: "redis://%env(REDIS_HOST)%"
+            dsn: 'redis://%env(REDIS_HOST)%'
             options:
                 replication: true
-                prefix: "%redis_key%_session_%kernel.environment%_"
+                prefix: '%redis_key%_session_%kernel.environment%_'
             logging: true
         cache:
             type: predis
             alias: cache
-            dsn: "redis://%env(REDIS_HOST)%/1"
+            dsn: 'redis://%env(REDIS_HOST)%/1'
             options:
                 replication: true
-                prefix: "%redis_key%_cache_%kernel.environment%_"
+                prefix: '%redis_key%_cache_%kernel.environment%_'
             logging: false
         meta:
             type: predis
             alias: meta
-            dsn: "redis://%env(REDIS_HOST)%/3"
+            dsn: 'redis://%env(REDIS_HOST)%/3'
             options:
                 connection_timeout: 10
                 read_write_timeout: 30
                 replication: true
                 connection_persistent: false
-                cluster: Snc\RedisBundle\Client\Predis\Connection\PredisCluster
-                prefix: "%redis_key%_meta_%kernel.environment%_"
+                #cluster: Snc\RedisBundle\Client\Predis\Connection\PredisCluster
+                prefix: '%redis_key%_meta_%kernel.environment%_'
             logging: false
     session:
         client: session
-        prefix: "%redis_key%_session_%kernel.environment%_"
+        prefix: '%redis_key%_session_%kernel.environment%_'
     doctrine:
         metadata_cache:
             client: meta

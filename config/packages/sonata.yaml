@@ -1,6 +1,6 @@
 sonata_admin:
-    title: 'KodeCMS'
-    title_logo: " "
+    title: ' '
+    title_logo: 'logo.png'
     dashboard:
         blocks:
             -

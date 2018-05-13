@@ -89,8 +89,14 @@
     "knplabs/knp-menu-bundle": {
         "version": "v2.2.1"
     },
-    "kode-cms/kode-cms-core": {
+    "kode-cms/kode-bundle": {
         "version": "dev-master"
+    },
+    "kode-cms/kode-bundle-translatable": {
+        "version": "dev-master"
+    },
+    "lexik/translation-bundle": {
+        "version": "v4.0.10"
     },
     "monolog/monolog": {
         "version": "1.23.0"

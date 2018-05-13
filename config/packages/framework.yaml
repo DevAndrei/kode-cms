@@ -13,7 +13,7 @@ framework:
 
     cache:
         app: cache.adapter.redis
-        default_redis_provider: "redis://%env(REDIS_HOST)%/4"
+        default_redis_provider: 'redis://%env(REDIS_HOST)%/4'
 
     templating:
         engines:

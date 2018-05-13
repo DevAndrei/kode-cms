@@ -3,7 +3,7 @@ nelmio_api_doc:
         info:
             title: KodeCMS
             description: Symfony 4 CMS
-            version: "%env(resolve:VERSION)%"
+            version: '%env(resolve:VERSION)%'
     areas:
         path_patterns:
-            - ^/api(?!/doc|doc.json$)
+            - ^/api(?!/doc$)

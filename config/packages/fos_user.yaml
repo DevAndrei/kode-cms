@@ -3,7 +3,7 @@ fos_user:
     firewall_name: main
     user_class: Fos\UserBundle\Model\User
     from_email:
-        address: "fosub@localhost"
-        sender_name: "FOSUB"
+        address: 'fosub@localhost'
+        sender_name: 'FOSUB'
     group:
         group_class: FOS\UserBundle\Model\Group

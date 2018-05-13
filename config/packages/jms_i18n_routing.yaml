@@ -1,4 +1,5 @@
 jms_i18n_routing:
-    default_locale: "%locale%"
-    locales: "%locales_short%"
+    default_locale: '%locale%'
+    locales: '%locales_short%'
     strategy: prefix
+    omit_prefix_when_default: false
